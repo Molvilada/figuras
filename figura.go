@@ -2,12 +2,12 @@ package figuras
 
 import "fmt"
 
-type Figura interface {
+type figura interface {
 	area() float64
 	perimetro() float64
 }
 
-func Medidas(f Figura) {
+func Medidas(f figura) {
 	fmt.Println("Área:", f.area())
 	fmt.Println("Perímetro:", f.perimetro())
 }
